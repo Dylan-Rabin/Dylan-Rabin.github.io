@@ -1,6 +1,10 @@
 h1{
-    color: red;
+	font-weight: bold;
+	font-size: large;
+	text-align: center;
 }
+
+/* Navigation CSS */
 header{
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 12px;
@@ -8,14 +12,14 @@ header{
 	padding-bottom: 30px;
 	z-index: 1;
 }
-
-/* Navigation CSS */
 nav{
 	padding-top: 15px;
+	padding-inline-start: 5%;
+	padding-inline-end: 5%;
 }
 ul {
 	list-style-type: none;
-	margin: 0;
+	margin: 1%;
 	padding: 0;
 	overflow: hidden;
 	background-color: #FFF;
@@ -28,7 +32,7 @@ nav li {
 nav li a {
 	display: block;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 15px;
 	text-decoration: none;
   }
   
@@ -45,7 +49,7 @@ nav a, div a{
 
 nav a:active{
 	background: white;
-	padding: 10px 14px;
+	padding: 15px;
 }
 
 nav li:hover{
@@ -55,7 +59,7 @@ nav li:hover{
 
 nav li .current{
 	text-decoration: underline;
-	padding: 10px 14px;
+	padding: 15px;
 }
 
 .navbar-toggle {
@@ -72,8 +76,12 @@ footer{
 }
 
 .footer-items a{
-	margin: 8px;
+	margin: 20px;
 	color: black;
+}
+
+div.footer-items{
+	margin-bottom: 10px;
 }
 
 .footer-items a:active, .footer-items a:hover{
