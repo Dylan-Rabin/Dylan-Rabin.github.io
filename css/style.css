@@ -5,6 +5,11 @@ h1{
 	text-align: center;
 }
 
+h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+}
+
 /* Navigation CSS */
 header{
 	font-family: 'Varela', sans-serif;
@@ -64,6 +69,12 @@ nav li .current{
 .navbar-toggle {
 	display: none;
 }
+img{
+    /* for image to be on its own line and take up entire width, use block property value */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 footer{
 	background-color: white;
