@@ -9,6 +9,7 @@ header{
 	z-index: 1;
 }
 
+/* Navigation CSS */
 nav{
 	padding-top: 15px;
 }
@@ -26,21 +27,15 @@ nav li {
   
 nav li a {
 	display: block;
-	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
   }
   
-  
 nav li {
 	text-align: center;
 	display: inline;
-	border: 0.3px solid grey;
-	width: 50%;
-	padding: 18px ;
 	margin: 0;
-	
 }
 
 nav a, div a{
@@ -55,7 +50,7 @@ nav a:active{
 
 nav li:hover{
 	text-decoration: underline;
-	background-color: lightseagreen;
+	background-color: #4bb4f5;
 }
 
 nav li .current{
@@ -82,5 +77,5 @@ footer{
 }
 
 .footer-items a:active, .footer-items a:hover{
-	color: lightskyblue;
+	color: #4bb4f5;
 }
