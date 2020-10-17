@@ -4,13 +4,7 @@ h1{
 	font-size: 32px;
 	text-align: center;
 }
-body{
-	background-image: url("images/IMG_1198.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 /* Navigation CSS */
 header{
 	font-family: 'Varela', sans-serif;
