@@ -7,17 +7,33 @@ h1{
 
 h2{
 	font-family: 'Permanent Marker', cursive;
-	font-size: 24px;
+	font-size: 32px;
 	text-decoration: underline;
-	margin-bottom: 1%;
+	margin-bottom: 5%;
 }
+.skip a{
+	font-family: 'Varela', sans-serif;
+	background: white;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -40px;
+  }
+  
+.skip a:focus{
+	position: absolute;
+	top: 0px;
+  }
 
 p{
 	font-family: 'Varela', sans-serif;
 }
 button{
 	font-family: 'Varela', sans-serif;
-	margin: 1%;
+	margin-top: 10%;
 }
 /* Navigation CSS */
 header{
@@ -81,6 +97,7 @@ nav li .current{
 .mainphotocontainer{
 	opacity: 0.4;
 	position: relative;
+	margin-bottom: -4px;
   }
 
 .mainheader{
@@ -94,49 +111,62 @@ nav li .current{
 	text-align: center;
   }
 
-#school{
-	text-align: right;
-	padding: 5%;
+.content{
+	display: grid;
+	grid-template-rows: repeat(4,auto);
+	grid-template-columns: repeat(2, auto);
+  }
+
+.school{
+	grid-row: 1 / 2;
+	grid-column: 2/ 3;
+	padding: 15%;
 }
 
-#schoolimage{
-	display: block;
-	margin-right: auto;
-	width: 30%;
+.schoolimage{
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
 }
 
-#surf {
+.surf {
+	grid-column: 1/2;
+	grid-row: 2/3;
 	background-color: #C2D7DA;
-	padding: 5%;
+	padding: 15%;
 }
 
-#surfimage{
-	display: block;
-	margin-left: auto;
-	width: 30%;
-}
-
-#food{
-	text-align: right;
-	padding: 5%;
-}
-
-#foodimage{
-	display: block;
-	margin-right: auto;
-	width: 30%;
-}
-
-#fun {
+.surfimage{
+	grid-column: 2 /auto;
+	grid-row: 2/3;
 	background-color: #C2D7DA;
-	padding: 5%;
+	
 }
 
-#funimage{
-	display: block;
-	margin-left: auto;
-	width: 30%;
+.food{
+	grid-column: 2/ auto;
+	grid-row: 3/4;
+	padding: 15%;
 }
+
+.foodimage{
+	grid-column: 1 / 2;
+	grid-row: 3/4;
+}
+
+
+.fun {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	background-color: #C2D7DA;
+	padding: 15%;
+}
+
+.funimage{
+	grid-column: 2 / auto;
+	grid-row: 4/5;
+	background-color: #C2D7DA;
+}
+
 
 footer{
 	background-color: white;
