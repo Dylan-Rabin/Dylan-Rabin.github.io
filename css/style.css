@@ -1,7 +1,7 @@
 h1{
 	font-family: 'Permanent Marker', cursive;
 	font-weight: bold;
-	font-size: 42px;
+	font-size: 36px;
 	text-align: center;
 }
 
@@ -9,7 +9,7 @@ h2{
 	font-family: 'Permanent Marker', cursive;
 	font-size: 24px;
 	text-decoration: underline;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 .skip a{
 	font-family: 'Varela', sans-serif;
@@ -34,7 +34,11 @@ p{
 }
 button{
 	font-family: 'Varela', sans-serif;
-	margin-top: 10%;
+	display: block;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* Navigation CSS */
 header{
@@ -116,11 +120,11 @@ nav li .current{
   }
 
 .content{
-	display: grid;
-	grid-template-rows: repeat(4,auto);
-	grid-template-columns: repeat(2, auto);
+	display: block;
+	padding: 5%;
+	background-color: #C2D7DA;
   }
-
+/*
 .school{
 	grid-row: 1 / 2;
 	grid-column: 2/ 3;
@@ -172,7 +176,7 @@ nav li .current{
 	background-color: #C2D7DA;
 }
 
-
+*/
 footer{
 	background-color: white;
 	text-align: center;
@@ -195,8 +199,89 @@ div.footer-items{
 	color: #C2D7DA;
 }
 
+/* For Tablet */
+@media only screen and (min-width: 600px) {
+	h1{
+		font-family: 'Permanent Marker', cursive;
+		font-weight: bold;
+		font-size: 38px;
+		text-align: center;
+	}
+	
+	h2{
+		font-family: 'Permanent Marker', cursive;
+		font-size: 28px;
+		text-decoration: underline;
+		margin-bottom: 3%;
+	}
 
-@media only screen and (min-width: 768px) {
+	button{
+		font-family: 'Varela', sans-serif;
+		margin-top: 5%;
+	}
+
+	.content{
+		display: grid;
+		grid-template-rows: repeat(4,auto);
+		grid-template-columns: repeat(2, auto);
+		padding: 0;
+		background-color: #FFF;
+	  }
+	
+	.school{
+		grid-row: 1 / 2;
+		grid-column: 2/ 3;
+		padding: 7% 7% 0% 7%;
+	
+	}
+	
+	.schoolimage{
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+	
+	.surf {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		background-color: #C2D7DA;
+		padding: 7% 7% 0% 7%;
+	}
+	
+	.surfimage{
+		grid-column: 2 /auto;
+		grid-row: 2/3;
+		background-color: #C2D7DA;
+		
+	}
+	
+	.food{
+		grid-column: 2/ auto;
+		grid-row: 3/4;
+		padding: 7% 7% 0% 7%;
+	}
+	
+	.foodimage{
+		grid-column: 1 / 2;
+		grid-row: 3/4;
+	}
+	
+	
+	.fun {
+		grid-column: 1/2;
+		grid-row: 4/5;
+		background-color: #C2D7DA;
+		padding: 7% 7% 0% 7%;
+	}
+	
+	.funimage{
+		grid-column: 2 / auto;
+		grid-row: 4/5;
+		background-color: #C2D7DA;
+	}
+	}
+
+/* For Desktop */
+@media only screen and (min-width: 990px) {
 h1{
 	font-family: 'Permanent Marker', cursive;
 	font-weight: bold;
@@ -209,5 +294,68 @@ h2{
 	font-size: 32px;
 	text-decoration: underline;
 	margin-bottom: 5%;
+}
+
+button{
+	font-family: 'Varela', sans-serif;
+	margin-top: 10%;
+}
+
+.content{
+	display: grid;
+	grid-template-rows: repeat(4,auto);
+	grid-template-columns: repeat(2, auto);
+	background-color: #FFF;
+  }
+
+.school{
+	grid-row: 1 / 2;
+	grid-column: 2/ 3;
+	padding: 10% 10% 0% 10%;
+
+}
+
+.schoolimage{
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
+.surf {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	background-color: #C2D7DA;
+	padding: 10% 10% 0% 10%;
+}
+
+.surfimage{
+	grid-column: 2 /auto;
+	grid-row: 2/3;
+	background-color: #C2D7DA;
+	
+}
+
+.food{
+	grid-column: 2/ auto;
+	grid-row: 3/4;
+	padding: 10% 10% 0% 10%;
+}
+
+.foodimage{
+	grid-column: 1 / 2;
+	grid-row: 3/4;
+}
+
+
+.fun {
+	grid-column: 1/2;
+	grid-row: 4/5;
+	background-color: #C2D7DA;
+	padding: 10% 10% 0% 10%;
+}
+
+.funimage{
+	grid-column: 2 / auto;
+	grid-row: 4/5;
+	background-color: #C2D7DA;
 }
 }
