@@ -1,14 +1,20 @@
 h1{
 	font-family: 'Permanent Marker', cursive;
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 32px;
 	text-align: center;
+}
+
+.pageheader{
+	font-size: 28px;
+	padding: 3%;
 }
 
 h2{
 	font-family: 'Permanent Marker', cursive;
 	font-size: 24px;
 	text-decoration: underline;
+	margin-top: 7%;
 	margin-bottom: 3%;
 }
 .skip a{
@@ -124,59 +130,54 @@ nav li .current{
 	padding: 5%;
 	background-color: #C2D7DA;
   }
-/*
-.school{
-	grid-row: 1 / 2;
-	grid-column: 2/ 3;
-	padding: 10% 10% 0% 10%;
 
+.funimage, .foodimage, .surfimage, .schoolimage{
+	margin-bottom: 7%;
 }
 
-.schoolimage{
-	grid-row: 1 / 2;
-	grid-column: 1 / 2;
+.food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 3%;
 }
 
-.surf {
-	grid-column: 1/2;
-	grid-row: 2/3;
+.food1container, .food2container, .food3container, .food4container, .food5container, .food6container, .food7container, .food8container, .food9container, .food10container, .food11container, .food12container {
+	position: relative;
+  }
+  
+
+.food1overlay, .food2overlay, .food3overlay, .food4overlay, .food5overlay, .food6overlay, .food7overlay, .food8overlay, .food9overlay, .food10overlay, .food11overlay, .food12overlay  {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s;
 	background-color: #C2D7DA;
-	padding: 10% 10% 0% 10%;
-}
-
-.surfimage{
-	grid-column: 2 /auto;
-	grid-row: 2/3;
-	background-color: #C2D7DA;
-	
-}
-
-.food{
-	grid-column: 2/ auto;
-	grid-row: 3/4;
-	padding: 10% 10% 0% 10%;
-}
-
-.foodimage{
-	grid-column: 1 / 2;
-	grid-row: 3/4;
-}
+  }
+  
+.food1container:hover .food1overlay, .food2container:hover .food2overlay, .food3container:hover .food3overlay, .food4container:hover .food4overlay, .food5container:hover .food5overlay, .food6container:hover .food6overlay, .food7container:hover .food7overlay, .food8container:hover .food8overlay, .food9container:hover .food9overlay, .food10container:hover .food10overlay, .food11container:hover .food11overlay, .food12container:hover .food12overlay {
+	opacity: 0.9;
+  }
+  
+.food1text, .food2text, .food3text, .food4text, .food5text, .food6text, .food7text, .food8text, .food9text, .food10text, .food11text, .food12text  {
+	color: #000000;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: 'Varela', sans-serif;
+  }
 
 
-.fun {
-	grid-column: 1/2;
-	grid-row: 4/5;
-	background-color: #C2D7DA;
-	padding: 10% 10% 0% 10%;
-}
-
-.funimage{
-	grid-column: 2 / auto;
-	grid-row: 4/5;
-	background-color: #C2D7DA;
-}
-
-*/
 footer{
 	background-color: white;
 	text-align: center;
@@ -208,11 +209,21 @@ div.footer-items{
 		text-align: center;
 	}
 	
+	.pageheader{
+		font-size: 32px;
+		padding: 3%;
+	}
+
 	h2{
 		font-family: 'Permanent Marker', cursive;
 		font-size: 28px;
 		text-decoration: underline;
 		margin-bottom: 3%;
+		margin-top: 0%;
+	}
+
+	hr{
+		opacity: 0;
 	}
 
 	button{
@@ -265,7 +276,6 @@ div.footer-items{
 		grid-row: 3/4;
 	}
 	
-	
 	.fun {
 		grid-column: 1/2;
 		grid-row: 4/5;
@@ -278,15 +288,59 @@ div.footer-items{
 		grid-row: 4/5;
 		background-color: #C2D7DA;
 	}
+
+	.funimage, .foodimage, .surfimage, .schoolimage{
+		margin-bottom: 0%;
 	}
 
+	.brekkie{
+		display: grid;
+		grid-template-columns: repeat(2,auto);
+	}
+
+	.lunch{
+		display: grid;
+		grid-template-columns: repeat(2,auto);
+	}
+
+	.drinks{
+		display: grid;
+		grid-template-columns: repeat(2,auto);
+	}
+
+	.desserts{
+		display: grid;
+		grid-template-columns: repeat(2,auto);
+	}
+/*
+	.desserts{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		max-width: 33%;
+		height: auto;
+	}
+	*/
+
+	.food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
+		padding: 3%;	
+	}
+
+}
+
 /* For Desktop */
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 768px) {
 h1{
 	font-family: 'Permanent Marker', cursive;
 	font-weight: bold;
 	font-size: 48px;
 	text-align: center;
+}
+
+.pageheader{
+	font-size: 36px;
+	text-decoration: underline;
+	padding: 3%;
 }
 
 h2{
@@ -358,4 +412,29 @@ button{
 	grid-row: 4/5;
 	background-color: #C2D7DA;
 }
+
+.brekkie{
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+}
+
+.lunch{
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+}
+
+.drinks{
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+}
+
+.desserts{
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+}
+
+.food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
+	padding: 5%;	
+}
+
 }
