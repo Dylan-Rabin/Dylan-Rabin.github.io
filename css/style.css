@@ -101,6 +101,95 @@ nav li .current{
 	text-decoration: underline;
 	padding: 15px;
 }
+/* Hamburger Menu Attempts
+.mobile-container {
+	max-width: 480px;
+	margin: auto;
+	background-color: #555;
+	height: 500px;
+	color: white;
+	border-radius: 10px;
+  }
+  
+  .topnav {
+	overflow: hidden;
+	background-color: #333;
+	position: relative;
+  }
+  
+  .topnav #myLinks {
+	display: none;
+  }
+  
+  .topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+  
+  .topnav a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .currentpage {
+	background-color: #4CAF50;
+	color: white;
+  }
+ 
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+	bottom: 0;
+	display: block;
+}
+.navTrigger i {
+    background-color: white;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 120%;
+    height: 4px;
+}
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+i {
+    font-style: italic;
+}
+*/
 
 .currentpage{
 	background-color: #C2D7DA;
@@ -133,6 +222,20 @@ nav li .current{
 
 .funimage, .foodimage, .surfimage, .schoolimage{
 	margin-bottom: 7%;
+}
+
+.parallaxsurf {
+	/* The image used */
+	background-image: url("images/surfpexels.jpg");
+  
+	/* Set a specific height */
+	height: 500px;
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
@@ -437,4 +540,10 @@ button{
 	padding: 5%;	
 }
 
+}
+
+@media (prefers-reduced-motion: reduce){
+	* {
+		animation: none;
+	}
 }
