@@ -7,7 +7,7 @@ h1{
 
 .pageheader{
 	font-size: 28px;
-	padding: 3%;
+	padding: 0% 3% 0% 3%;
 }
 
 h2{
@@ -225,19 +225,18 @@ i {
 }
 
 .parallaxsurf {
-	/* The image used */
-	background-image: url("images/surfpexels.jpg");
-  
-	/* Set a specific height */
-	height: 500px;
-  
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-image: url("surfpexels.jpg");
+	background-attachment: scroll;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+	height: 300px;
+  }
 
+  .surfheaders{
+	padding-left: 3%;
+  }
+  
 .food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
 	display: block;
 	width: 100%;
@@ -314,7 +313,6 @@ div.footer-items{
 	
 	.pageheader{
 		font-size: 32px;
-		padding: 3%;
 	}
 
 	h2{
@@ -396,6 +394,20 @@ div.footer-items{
 		margin-bottom: 0%;
 	}
 
+	.parallaxsurf {
+		background-image: url("surfpexels.jpg");
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 400px;
+	  }
+
+	
+	.surfheaders{
+	padding-left: 5%;
+}
+	
 	.brekkie{
 		display: grid;
 		grid-template-columns: repeat(2,auto);
@@ -443,7 +455,6 @@ h1{
 .pageheader{
 	font-size: 36px;
 	text-decoration: underline;
-	padding: 3%;
 }
 
 h2{
@@ -502,7 +513,6 @@ button{
 	grid-row: 3/4;
 }
 
-
 .fun {
 	grid-column: 1/2;
 	grid-row: 4/5;
@@ -514,6 +524,20 @@ button{
 	grid-column: 2 / auto;
 	grid-row: 4/5;
 	background-color: #C2D7DA;
+}
+
+.parallaxsurf {
+	/* The image used */
+	background-image: url("surfpexels.jpg");
+  
+	/* Set a specific height */
+	height: 500px;
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .brekkie{
