@@ -17,6 +17,14 @@ h2{
 	margin-top: 7%;
 	margin-bottom: 3%;
 }
+
+h3{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+	text-decoration: underline;
+	padding-left: 3%;
+}
+
 .skip a{
 	font-family: 'Varela', sans-serif;
 	background: white;
@@ -224,6 +232,14 @@ i {
 	margin-bottom: 7%;
 }
 
+ul.schoolquotes, ul.classlist{
+	font-family: 'Varela', sans-serif;
+	font-size: 14px;
+	padding-left: 4%;
+	list-style-type: square;
+}
+
+
 .parallaxsurf {
 	background-image: url("surfpexels.jpg");
 	background-attachment: scroll;
@@ -236,6 +252,7 @@ i {
   .surfheaders{
 	padding-left: 3%;
   }
+
   
 .food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
 	display: block;
@@ -323,6 +340,13 @@ div.footer-items{
 		margin-top: 0%;
 	}
 
+	h3{
+		font-family: 'Permanent Marker', cursive;
+		font-size: 28px;
+		text-decoration: underline;
+		padding-left: 3%;
+	}
+
 	hr{
 		opacity: 0;
 	}
@@ -393,7 +417,11 @@ div.footer-items{
 	.funimage, .foodimage, .surfimage, .schoolimage{
 		margin-bottom: 0%;
 	}
-
+	
+	ul.schoolquotes, ul.classlist{
+		font-size: 18px;
+	}
+	
 	.parallaxsurf {
 		background-image: url("surfpexels.jpg");
 		background-attachment: scroll;
@@ -464,6 +492,13 @@ h2{
 	margin-bottom: 5%;
 }
 
+h3{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 28px;
+	text-decoration: underline;
+	padding-left: 3%;
+}
+
 button{
 	font-family: 'Varela', sans-serif;
 	margin-top: 10%;
@@ -524,6 +559,24 @@ button{
 	grid-column: 2 / auto;
 	grid-row: 4/5;
 	background-color: #C2D7DA;
+}
+
+.usyd{
+	height: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.schoolpics{
+	display: flex;
+	flex-flow: row wrap;
+	padding-left: 5%;
+}
+
+.school1container, .school2container, .school3container{
+	padding: 2%;
+	width: 500px;
 }
 
 .parallaxsurf {
