@@ -22,7 +22,6 @@ h3{
 	font-family: 'Permanent Marker', cursive;
 	font-size: 24px;
 	text-decoration: underline;
-	padding-left: 3%;
 }
 
 .skip a{
@@ -239,6 +238,16 @@ ul.schoolquotes, ul.classlist{
 	list-style-type: square;
 }
 
+.usydopinion{
+	padding: 1% 3%;
+	font-family: 'Varela', sans-serif;
+	font-size: 14px;
+}
+
+.animaluncrossing{
+	text-decoration: underline;
+	color: blue;
+}
 
 .parallaxsurf {
 	background-image: url("surfpexels.jpg");
@@ -249,9 +258,27 @@ ul.schoolquotes, ul.classlist{
 	height: 300px;
   }
 
-  .surfheaders{
+.surfheaders{
 	padding-left: 3%;
   }
+
+.surfinstructions{
+	display: block;
+	padding-top: 2%;
+}
+
+.step1, .step2, .step3, .step4, .step5{
+	padding: 2%;
+}
+
+h4{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: underline;
+}
+
 
   
 .food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
@@ -430,12 +457,48 @@ div.footer-items{
 		background-size: cover;
 		height: 400px;
 	  }
-
-	
+	  
 	.surfheaders{
-	padding-left: 5%;
-}
-	
+		padding-left: 5%;
+	}
+
+	.surfinstructions{
+		display: grid;
+		grid-template-columns: 1fr 8fr;
+		grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+		padding-top: 2%;
+		padding-right: 4%;
+	}
+
+	.number1, .number2, .number3, .number4, .number5{
+		grid-column: 1/2;
+	}
+
+	.step1, .step2, .step3, .step4, .step5{
+		grid-column: 2/3;
+		padding: 0%;
+	}
+
+	.number1, .step1{
+		grid-row: 1/2;
+	}
+
+	.number2, .step2{
+		grid-row: 3/4;
+	}
+
+	.number3, .step3{
+		grid-row: 5/6;
+	}
+
+	.number4, .step4{
+		grid-row: 7/8;
+	}
+
+	.number5, .step5{
+		grid-row: 9/10;
+	}
+
 	.brekkie{
 		display: grid;
 		grid-template-columns: repeat(2,auto);
@@ -533,8 +596,7 @@ button{
 .surfimage{
 	grid-column: 2 /auto;
 	grid-row: 2/3;
-	background-color: #C2D7DA;
-	
+	background-color: #C2D7DA;	
 }
 
 .food{
@@ -568,7 +630,7 @@ button{
 	margin-right: auto;
 }
 
-.schoolpics{
+.schoolpics, .surfpics{
 	display: flex;
 	flex-flow: row wrap;
 	padding-left: 5%;
@@ -577,6 +639,11 @@ button{
 .school1container, .school2container, .school3container{
 	padding: 2%;
 	width: 400px;
+}
+
+.surf1container, .surf2container, .surf3container{
+	padding: 1%;
+	width: 420px;
 }
 
 .parallaxsurf {
@@ -593,6 +660,15 @@ button{
 	background-size: cover;
 }
 
+h4{
+	font-size: 32px;	
+}
+.number1, .number2, .number3, .number4, .number5{
+	grid-column: 1/2;
+}
+.step1, .step2, .step3, .step4, .step5{
+	grid-column: 2/3;
+}
 .brekkie{
 	display: grid;
 	grid-template-columns: repeat(3,auto);
