@@ -352,6 +352,26 @@ h4{
 	font-size: 14px;
 }
 
+.polaroid1, .polaroid2 {
+	width: 250px;
+	padding: 10px 10px 20px 10px;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	-webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+	-moz-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+	box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+}
+
+.pull-right.polaroid1, .pull-right.polaroid2 {
+	-webkit-transform: rotate(-9deg);
+	-moz-transform: rotate(-9deg);
+	transform: rotate(-9deg);
+}
+
 footer{
 	background-color: white;
 	text-align: center;
@@ -568,6 +588,130 @@ div.footer-items{
 
 	.food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
 		padding: 3%;	
+	}
+
+	.photo-album1 {
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 70em;
+		height: 450px;
+		margin-top: 5em;
+		min-width: 900px;
+		max-width: 1000px;
+		margin-bottom: 0%;
+	}
+
+	.polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9,
+	.polaroid10, .polaroid11, .polaroid12, .polaroid13, .polaroid14 {
+		padding: 20px 20px 30px 20px;
+		border: 2px solid #BFBFBF;
+		background-color: white;
+		-webkit-box-shadow: 3px 3px 4px rgba(135, 139, 144, 0.4);
+		-moz-box-shadow: 3px 4px 4px rgba(135, 139, 144, 0.4);
+		box-shadow: 3px 3px 4px rgba(135, 139, 144, 0.4);
+		margin-bottom: 0%;
+		margin-left: 0;
+		margin-right: 0;
+		display: inline-block;
+	
+	}
+
+	.polaroid1, .polaroid5, .polaroid10 {
+		width: 300px;
+	}
+
+	.polaroid2, .polaroid7, .polaroid12, .polaroid14{
+		width: 250px;
+	}
+	
+	.polaroid3, .polaroid9, .polaroid13{
+		width: 275px;
+	}
+
+	.polaroid4, .polaroid6, .polaroid8, .polaroid11{
+		width: 200px;
+	}
+	
+	.pull-right.polaroid1,  .pull-right.polaroid11{
+		-webkit-transform: rotate(-9deg);
+		-moz-transform: rotate(-9deg);
+		transform: rotate(-9deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid2, .pull-right.polaroid12 {
+		-webkit-transform: rotate(19deg);
+		-moz-transform: rotate(19deg);
+		transform: rotate(19deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid3, .pull-right.polaroid13 {
+		-webkit-transform: rotate(-14deg);
+		-moz-transform: rotate(-14deg);
+		transform: rotate(-14deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid4, .pull-right.polaroid14 {
+		-webkit-transform: rotate(9deg);
+		-moz-transform: rotate(9deg);
+		transform: rotate(9deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid5 {
+		-webkit-transform: rotate(-9deg);
+		-moz-transform: rotate(-9deg);
+		transform: rotate(-9deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid6 {
+		-webkit-transform: rotate(19deg);
+		-moz-transform: rotate(19deg);
+		transform: rotate(19deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid7 {
+		-webkit-transform: rotate(-14deg);
+		-moz-transform: rotate(-14deg);
+		transform: rotate(-14deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid8 {
+		-webkit-transform: rotate(9deg);
+		-moz-transform: rotate(9deg);
+		transform: rotate(9deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid9 {
+		-webkit-transform: rotate(14deg);
+		-moz-transform: rotate(14deg);
+		transform: rotate(14deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid10 {
+		-webkit-transform: rotate(-14deg);
+		-moz-transform: rotate(-14deg);
+		transform: rotate(-14deg);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+
+	.pull-right.polaroid1:hover, .pull-right.polaroid1:focus, .pull-right.polaroid1:active, .pull-right.polaroid2:hover, .pull-right.polaroid2:focus, .pull-right.polaroid2:active, 
+	.pull-right.polaroid3:hover, .pull-right.polaroid3:focus, .pull-right.polaroid3:active, .pull-right.polaroid4:hover, .pull-right.polaroid4:focus, .pull-right.polaroid4:active, 
+	.pull-right.polaroid5:hover, .pull-right.polaroid5:focus, .pull-right.polaroid5:active, .pull-right.polaroid6:hover, .pull-right.polaroid6:focus, .pull-right.polaroid6:active, 
+	.pull-right.polaroid7:hover, .pull-right.polaroid7:focus, .pull-right.polaroid7:active, .pull-right.polaroid8:hover, .pull-right.polaroid8:focus, .pull-right.polaroid8:active,
+	.pull-right.polaroid9:hover, .pull-right.polaroid9:focus, .pull-right.polaroid9:active, .pull-right.polaroid10:hover, .pull-right.polaroid10:focus, .pull-right.polaroid10:active, 
+	.pull-right.polaroid11:hover, .pull-right.polaroid11:focus, .pull-right.polaroid11:active, .pull-right.polaroid12:hover, .pull-right.polaroid12:focus, .pull-right.polaroid12:active, 
+	.pull-right.polaroid13:hover, .pull-right.polaroid13:focus, .pull-right.polaroid13:active, .pull-right.polaroid14:hover, .pull-right.polaroid14:focus, .pull-right.polaroid14:active    {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
 	}
 
 }
