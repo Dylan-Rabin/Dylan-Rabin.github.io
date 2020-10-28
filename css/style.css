@@ -283,7 +283,7 @@ ul.schoolquotes, ul.classlist{
 	height: 350px;
   }
 
-.surfheaders{
+.subheaders{
 	padding-left: 3%;
   }
 
@@ -352,8 +352,15 @@ h4{
 	font-size: 14px;
 }
 
-.polaroid1, .polaroid2 {
-	width: 250px;
+.photo-album1{
+	margin-top: 5%;
+	margin-bottom: 50%;
+	height: 5000px;
+}
+
+.polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, 
+.polaroid8, .polaroid9, .polaroid10, .polaroid11, .polaroid12, .polaroid13, .polaroid14 {
+	width: 300px;
 	padding: 10px 10px 20px 10px;
 	border: 1px solid #BFBFBF;
 	background-color: white;
@@ -366,10 +373,16 @@ h4{
 	margin-bottom: 10%;
 }
 
-.pull-right.polaroid1, .pull-right.polaroid2 {
+.pull-right.polaroid1, .pull-right.polaroid3, .pull-right.polaroid5, .pull-right.polaroid7, .pull-right.polaroid9, .pull-right.polaroid11, .pull-right.polaroid13 {
 	-webkit-transform: rotate(-9deg);
 	-moz-transform: rotate(-9deg);
 	transform: rotate(-9deg);
+}
+
+.pull-right.polaroid2, .pull-right.polaroid4, .pull-right.polaroid6, .pull-right.polaroid8, .pull-right.polaroid10, .pull-right.polaroid12, .pull-right.polaroid14 {
+	-webkit-transform: rotate(9deg);
+	-moz-transform: rotate(9deg);
+	transform: rotate(9deg);
 }
 
 footer{
@@ -393,6 +406,7 @@ div.footer-items{
 .footer-items a:active, .footer-items a:hover{
 	color: #C2D7DA;
 }
+
 
 /* For Tablet */
 @media only screen and (min-width: 600px) {
@@ -595,7 +609,7 @@ div.footer-items{
 		width: 80%;
 		margin: 0 auto;
 		max-width: 70em;
-		height: 450px;
+		height: 1400px;
 		margin-top: 5em;
 		min-width: 900px;
 		max-width: 1000px;
