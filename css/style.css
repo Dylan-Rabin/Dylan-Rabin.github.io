@@ -108,95 +108,7 @@ nav li .current{
 	text-decoration: underline;
 	padding: 15px;
 }
-/* Hamburger Menu Attempts
-.mobile-container {
-	max-width: 480px;
-	margin: auto;
-	background-color: #555;
-	height: 500px;
-	color: white;
-	border-radius: 10px;
-  }
-  
-  .topnav {
-	overflow: hidden;
-	background-color: #333;
-	position: relative;
-  }
-  
-  .topnav #myLinks {
-	display: none;
-  }
-  
-  .topnav a {
-	color: white;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	display: block;
-  }
-  
-  .topnav a.icon {
-	background: black;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-  }
-  
-  .topnav a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-  
-  .currentpage {
-	background-color: #4CAF50;
-	color: white;
-  }
- 
-.navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-	bottom: 0;
-	display: block;
-}
-.navTrigger i {
-    background-color: white;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 120%;
-    height: 4px;
-}
-.navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-.navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
-.navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
-}
 
-i {
-    font-style: italic;
-}
-*/
 
 #side-menu{
 	display: none;
@@ -359,7 +271,7 @@ h4{
 }
 
 .polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, 
-.polaroid8, .polaroid9, .polaroid10, .polaroid11, .polaroid12, .polaroid13, .polaroid14 {
+.polaroid8, .polaroid9, .polaroid10, .polaroid11, .polaroid12, .polaroid13, .polaroid14, .polaroid15 {
 	width: 300px;
 	padding: 10px 10px 20px 10px;
 	border: 1px solid #BFBFBF;
@@ -373,7 +285,7 @@ h4{
 	margin-bottom: 10%;
 }
 
-.pull-right.polaroid1, .pull-right.polaroid3, .pull-right.polaroid5, .pull-right.polaroid7, .pull-right.polaroid9, .pull-right.polaroid11, .pull-right.polaroid13 {
+.pull-right.polaroid1, .pull-right.polaroid3, .pull-right.polaroid5, .pull-right.polaroid7, .pull-right.polaroid9, .pull-right.polaroid11, .pull-right.polaroid13, .pull-right.polaroid15 {
 	-webkit-transform: rotate(-9deg);
 	-moz-transform: rotate(-9deg);
 	transform: rotate(-9deg);
@@ -617,7 +529,7 @@ div.footer-items{
 	}
 
 	.polaroid1, .polaroid2, .polaroid3, .polaroid4, .polaroid5, .polaroid6, .polaroid7, .polaroid8, .polaroid9,
-	.polaroid10, .polaroid11, .polaroid12, .polaroid13, .polaroid14 {
+	.polaroid10, .polaroid11, .polaroid12, .polaroid13, .polaroid14, .polaroid15 {
 		padding: 20px 20px 30px 20px;
 		border: 2px solid #BFBFBF;
 		background-color: white;
@@ -643,7 +555,7 @@ div.footer-items{
 		width: 275px;
 	}
 
-	.polaroid4, .polaroid6, .polaroid8, .polaroid11{
+	.polaroid4, .polaroid6, .polaroid8, .polaroid11, .polaroid15{
 		width: 200px;
 	}
 	
@@ -675,7 +587,7 @@ div.footer-items{
 		-webkit-transition: -webkit-transform 0.5s ease-in;
 	}
 
-	.pull-right.polaroid5 {
+	.pull-right.polaroid5, .pull-right.polaroid15 {
 		-webkit-transform: rotate(-9deg);
 		-moz-transform: rotate(-9deg);
 		transform: rotate(-9deg);
@@ -723,7 +635,8 @@ div.footer-items{
 	.pull-right.polaroid7:hover, .pull-right.polaroid7:focus, .pull-right.polaroid7:active, .pull-right.polaroid8:hover, .pull-right.polaroid8:focus, .pull-right.polaroid8:active,
 	.pull-right.polaroid9:hover, .pull-right.polaroid9:focus, .pull-right.polaroid9:active, .pull-right.polaroid10:hover, .pull-right.polaroid10:focus, .pull-right.polaroid10:active, 
 	.pull-right.polaroid11:hover, .pull-right.polaroid11:focus, .pull-right.polaroid11:active, .pull-right.polaroid12:hover, .pull-right.polaroid12:focus, .pull-right.polaroid12:active, 
-	.pull-right.polaroid13:hover, .pull-right.polaroid13:focus, .pull-right.polaroid13:active, .pull-right.polaroid14:hover, .pull-right.polaroid14:focus, .pull-right.polaroid14:active    {
+	.pull-right.polaroid13:hover, .pull-right.polaroid13:focus, .pull-right.polaroid13:active, .pull-right.polaroid14:hover, .pull-right.polaroid14:focus, .pull-right.polaroid14:active,
+	.pull-right.polaroid15:hover, .pull-right.polaroid15:focus, .pull-right.polaroid15:active {
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 	}
