@@ -483,7 +483,7 @@ div.footer-items{
 		grid-row: 9/10;
 	}
 
-	.brekkie{
+	#brekkie{
 		display: grid;
 		grid-template-columns: repeat(2,auto);
 	}
@@ -800,7 +800,7 @@ h4{
 .step1, .step2, .step3, .step4, .step5{
 	grid-column: 2/3;
 }
-.brekkie{
+#brekkie{
 	display: grid;
 	grid-template-columns: repeat(3,auto);
 }
