@@ -149,7 +149,7 @@ nav li .current{
 	text-align: center;
   }
 
-.content{
+#content{
 	display: block;
 	padding: 5%;
 	background-color: #C2D7DA;
@@ -358,7 +358,7 @@ div.footer-items{
 	}
 
 
-	.content{
+	#content{
 		display: grid;
 		grid-template-rows: repeat(4,auto);
 		grid-template-columns: repeat(2, auto);
@@ -684,7 +684,7 @@ button{
 	display: block;
 }
 
-.content{
+#content{
 	display: grid;
 	grid-template-rows: repeat(4,auto);
 	grid-template-columns: repeat(2, auto);
@@ -800,7 +800,7 @@ h4{
 .step1, .step2, .step3, .step4, .step5{
 	grid-column: 2/3;
 }
-#brekkie{
+.brekkie{
 	display: grid;
 	grid-template-columns: repeat(3,auto);
 }
