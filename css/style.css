@@ -172,6 +172,12 @@ ul.schoolquotes, ul.classlist{
 	font-size: 14px;
 }
 
+.schoolpics, .surfpics{
+	display: flex;
+	flex-flow: row wrap;
+	padding-left: 0%;
+}
+
 .animaluncrossing{
 	text-decoration: underline;
 	color: blue;
@@ -227,6 +233,25 @@ h4{
 	position: relative;
   }
   
+.brekkie{
+	display: grid;
+	grid-template-columns: repeat(1,auto);
+}
+
+.lunch{
+	display: grid;
+	grid-template-columns: repeat(1,auto);
+}
+
+.drinks{
+	display: grid;
+	grid-template-columns: repeat(1,auto);
+}
+
+.desserts{
+	display: grid;
+	grid-template-columns: repeat(1,auto);
+}
 
 .food1overlay, .food2overlay, .food3overlay, .food4overlay, .food5overlay, .food6overlay, .food7overlay, .food8overlay, .food9overlay, .food10overlay, .food11overlay, .food12overlay  {
 	position: absolute;
@@ -483,7 +508,7 @@ div.footer-items{
 		grid-row: 9/10;
 	}
 
-	#brekkie{
+	.brekkie{
 		display: grid;
 		grid-template-columns: repeat(2,auto);
 	}
@@ -502,15 +527,7 @@ div.footer-items{
 		display: grid;
 		grid-template-columns: repeat(2,auto);
 	}
-/*
-	.desserts{
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		max-width: 33%;
-		height: auto;
-	}
-	*/
+
 
 	.food1, .food2, .food3, .food4, .food5, .food6, .food7, .food8, .food9, .food10, .food11, .food12 {
 		padding: 3%;	
@@ -745,12 +762,6 @@ button{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.schoolpics, .surfpics{
-	display: flex;
-	flex-flow: row wrap;
-	padding-left: 5%;
 }
 
 .school1container, .school2container, .school3container{
