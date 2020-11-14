@@ -60,6 +60,7 @@ p{
 	font-family: 'Varela', sans-serif;
 	font-size: 14px;
 }
+
 button{
 	font-family: 'Varela', sans-serif;
 	display: block;
@@ -67,7 +68,17 @@ button{
 	margin-bottom: 3%;
 	margin-left: auto;
 	margin-right: auto;
+	color: #fff;
+  	backface-visibility: hidden;
+  	border: 0.3rem solid transparent;
+	border-radius: 3rem;
+	padding: 0.7rem 2rem;
+	font-weight: 700;
+  	font-size: 18px;
+  	color: black;
 }
+
+
 /* Navigation CSS */
 header{
 	font-family: 'Varela', sans-serif;
@@ -135,6 +146,7 @@ nav li .current{
 	display: block;
 	margin-top: 0;
 	margin-left: auto;
+	font-size: 14px;
 	margin-right: 2%;
 	border: none;
 	background-color: #C2D7DA;
@@ -395,7 +407,26 @@ div.footer-items{
 	button{
 		font-family: 'Varela', sans-serif;
 		margin-top: 5%;
+		border: 0.2rem solid transparent;
+		border-radius: 3rem;
+		padding: 0.4rem 2rem;
+		font-weight: 700;
+  		font-size: 14px;
 	}
+
+	#side-menu{
+		display: block;
+	}
+
+	#ham-button{
+		display: none;
+	}
+
+	nav li {
+		float: right;
+		padding-left: 3.5%;
+		padding-right: 3.5%;
+	  }
 
 
 	#content{
@@ -715,6 +746,13 @@ button{
 #side-menu{
 	display: block;
 }
+
+nav li {
+	float: right;
+	margin-right: 0%;
+	padding-left: 1%;
+	padding-right: 1%;
+  }
 
 #content{
 	display: grid;
