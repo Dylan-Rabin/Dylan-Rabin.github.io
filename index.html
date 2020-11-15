@@ -80,12 +80,8 @@
 	  <img src = "images/IMG_6166.jpeg" class= "funimage" alt= "Guys in front of Harbour Bridge"/>
 	
 	  <div class="contact-container">
-		<?php
-	$action=$_REQUEST['action'];
-	if ($action=="")    /* display the contact form */
-    {
-    ?>
-		<form action="" method="POST" enctype="multipart/form-data">
+
+		<form action=https://formspree.io/f/mzbkvgll method="POST">
 		<h3>Want to Chat About My Trip?</h3><br>
 		<input type="hidden" name="action" value="submit"> 
 		<label for="fname">First Name</label>
@@ -110,27 +106,6 @@
 	  
 		  <input type="submit" value="Send Email">
 		</form>
-		<?php
-    } 
-else                /* send the submitted data */
-    {
-	$fname=$_REQUEST['fname'];
-	$lname=$_REQUEST['lname'];
-	$email=$_REQUEST['email'];
-    $country=$_REQUEST['country'];
-    $subject=$_REQUEST['subject'];
-    if (($fname=="")||($country=="")||($subject=="")||($lname=="")||($email==""))
-        {
-        echo "All fields are required, please fill the form again.";
-        }
-    else{        
-        $from="From: $fname \r\nReturn-path: $email";
-        $subjectback="Message sent using your contact form";
-        mail("dmrabin@umich.edu", $subjectback, $subject, $from);
-        echo "Email sent!";
-        }
-    }  
-?>
 	  </div>
 </main>
 
