@@ -236,9 +236,7 @@ ul.schoolquotes, ul.classlist{
 }
 
 .schoolpics, .surfpics{
-	display: flex;
-	flex-flow: row wrap;
-	padding-left: 0%;
+	display: inline;
 }
 
 .animaluncrossing{
@@ -571,6 +569,12 @@ div.footer-items{
 		padding-right: 4%;
 	}
 
+	.schoolpics, .surfpics{
+		display: flex;
+		flex-flow: row wrap;
+		padding-left: 0%;
+	}
+
 	.number1, .number2, .number3, .number4, .number5{
 		grid-column: 1/2;
 	}
@@ -775,7 +779,7 @@ h2{
 	font-family: 'Permanent Marker', cursive;
 	font-size: 32px;
 	text-decoration: underline;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 
 h3{
