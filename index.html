@@ -80,13 +80,22 @@
 	  <img src = "images/IMG_6166.jpeg" class= "funimage" alt= "Guys in front of Harbour Bridge"/>
 	
 	  <div class="contact-container">
-		<form action="action_page.php">
+		<?php
+	$action=$_REQUEST['action'];
+	if ($action=="")    /* display the contact form */
+    {
+    ?>
+		<form action="" method="POST" enctype="multipart/form-data">
 		<h3>Want to Chat About My Trip?</h3><br>
-		  <label for="fname">First Name</label>
+		<input type="hidden" name="action" value="submit"> 
+		<label for="fname">First Name</label>
 		  <input type="text" id="fname" name="firstname" placeholder="Your name..">
 	  
 		  <label for="lname">Last Name</label>
 		  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+		  <label for="email">Email</label>
+		  <input type="text" id="email" name="email" placeholder="Your email..">
 	  
 		  <label for="country">Country</label>
 		  <select id="country" name="country">
@@ -99,9 +108,29 @@
 		  <label for="subject">Subject</label>
 		  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 	  
-		  <input type="submit" value="Submit">
-	  
+		  <input type="submit" value="Send Email">
 		</form>
+		<?php
+    } 
+else                /* send the submitted data */
+    {
+	$fname=$_REQUEST['fname'];
+	$lname=$_REQUEST['lname'];
+	$email=$_REQUEST['email'];
+    $country=$_REQUEST['country'];
+    $subject=$_REQUEST['subject'];
+    if (($fname=="")||($country=="")||($subject=="")||($lname=="")||($email==""))
+        {
+        echo "All fields are required, please fill the form again.";
+        }
+    else{        
+        $from="From: $fname \r\nReturn-path: $email";
+        $subjectback="Message sent using your contact form";
+        mail("dmrabin@umich.edu", $subjectback, $subject, $from);
+        echo "Email sent!";
+        }
+    }  
+?>
 	  </div>
 </main>
 
