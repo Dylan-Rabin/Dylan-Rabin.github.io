@@ -933,7 +933,7 @@ nav li {
   /* Style the back side */
   .flip-card-back {
 	background-color: #e64626;
-	color: white;
+	color: black;
 	transform: rotateY(180deg);
   }
 
