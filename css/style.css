@@ -405,6 +405,20 @@ div.footer-items{
 	color: #C2D7DA;
 }
 
+.fun-footer-items a{
+	margin: 20px;
+	color: black;
+}
+
+div.fun-footer-items{
+	margin-bottom: 30px;
+	margin-top: 150px;
+}
+
+.fun-footer-items a:active, .fun-footer-items a:hover{
+	color: #C2D7DA;
+}
+
 
 /* For Tablet */
 @media only screen and (min-width: 600px) {
@@ -754,6 +768,19 @@ div.footer-items{
 		-moz-transform: rotate(0deg);
 	}
 
+	.fun-footer-items a{
+		margin: 20px;
+		color: black;
+	}
+	
+	div.fun-footer-items{
+		margin-bottom: 30px;
+		margin-top: 300px;
+	}
+	
+	.fun-footer-items a:active, .fun-footer-items a:hover{
+		color: #C2D7DA;
+	}
 
 }
 
@@ -929,7 +956,7 @@ nav li {
 	background-color: #bbb;
 	color: black;
   }
-  
+  s
   /* Style the back side */
   .flip-card-back {
 	background-color: #e64626;
@@ -1011,6 +1038,19 @@ h4{
 	padding: 5%;	
 }
 
+.fun-footer-items a{
+	margin: 20px;
+	color: black;
+}
+
+div.fun-footer-items{
+	margin-bottom: 30px;
+	margin-top: 300px;
+}
+
+.fun-footer-items a:active, .fun-footer-items a:hover{
+	color: #C2D7DA;
+}
 }
 
 @media (prefers-reduced-motion){
